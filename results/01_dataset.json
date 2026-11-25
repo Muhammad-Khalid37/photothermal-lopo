@@ -1,0 +1,26 @@
+{
+ "table1": {
+  "records": 952,
+  "publications": 28,
+  "LI_zero": 323,
+  "LI_positive": 443,
+  "LI_missing": 186,
+  "publications_matched": 13,
+  "dark_references": 74,
+  "illuminated_records": 96,
+  "comparisons": 96
+ },
+ "ambiguous_illuminated_records": 24,
+ "missing_LI_publications": 9,
+ "missing_LI_potential_pairs": 3,
+ "response": {
+  "positive": 68,
+  "zero": 20,
+  "negative": 8,
+  "rel_pairs": 76,
+  "rel_positive": 66,
+  "rel_negative": 8
+ },
+ "selectivity_both": 57,
+ "reproduces_reference_pairs": true
+}

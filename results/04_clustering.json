@@ -1,0 +1,12 @@
+{
+ "icc": 0.4114593040633043,
+ "kappa": 1.4303740129938753,
+ "m_bar": 7.384615384615385,
+ "m_tilde": 10.6875,
+ "de_equal": 3.627009402865712,
+ "de_unequal": 4.98601200811326,
+ "n_eff_equal": 26.468086882860046,
+ "n_eff_unequal": 19.253864580307546,
+ "bootstrap_se_ridge_minus_median": 2.479621184529385,
+ "minimum_detectable_difference_80pct_power": 6.942939316682278
+}

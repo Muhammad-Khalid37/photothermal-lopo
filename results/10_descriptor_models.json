@@ -1,0 +1,176 @@
+{
+ "table5": {
+  "Ridge (extended \u03b1 grid)": {
+   "one-hot": [
+    30.616337849343598,
+    0.0
+   ],
+   "physicochemical": [
+    30.97799019027022,
+    0.0
+   ],
+   "one-hot + dark STY": [
+    30.867694389383576,
+    0.0
+   ],
+   "physicochemical + dark STY": [
+    30.829028955728017,
+    0.0
+   ]
+  },
+  "L1 median regression": {
+   "one-hot": [
+    37.324905401263564,
+    0.0
+   ],
+   "physicochemical": [
+    25.368695221058086,
+    0.0
+   ],
+   "one-hot + dark STY": [
+    35.78528956138569,
+    0.0
+   ],
+   "physicochemical + dark STY": [
+    36.7177140682543,
+    0.0
+   ]
+  },
+  "Random Forest, squared error": {
+   "one-hot": [
+    35.59813025179348,
+    0.7015175589409401
+   ],
+   "physicochemical": [
+    40.89919159277508,
+    0.9035263690789664
+   ],
+   "one-hot + dark STY": [
+    32.8123834542068,
+    0.9550668654575308
+   ],
+   "physicochemical + dark STY": [
+    37.375915151694095,
+    0.8627336819295189
+   ]
+  },
+  "Random Forest, absolute error": {
+   "one-hot": [
+    33.248982901468665,
+    0.8713908694222537
+   ],
+   "physicochemical": [
+    35.515705976851535,
+    1.713647357548962
+   ],
+   "one-hot + dark STY": [
+    31.831782355924467,
+    1.2645993814240444
+   ],
+   "physicochemical + dark STY": [
+    34.12980501662401,
+    1.6647283949562628
+   ]
+  },
+  "Gradient boosting, absolute error": {
+   "one-hot": [
+    27.34010099325949,
+    1.0496050315566983
+   ],
+   "physicochemical": [
+    24.460510344123453,
+    0.8068631742681247
+   ],
+   "one-hot + dark STY": [
+    26.028568028818142,
+    2.415205725950782
+   ],
+   "physicochemical + dark STY": [
+    26.201863418819915,
+    2.566977950533737
+   ]
+  }
+ },
+ "baselines": {
+  "zero": 25.32247981694989,
+  "median": 25.560224842265217
+ },
+ "best": "Gradient boosting, absolute error | physicochemical",
+ "best_mae": 23.827554632313323,
+ "best_seed0_vs_median": {
+  "diff": -0.9666847302705136,
+  "lo": -5.682708410889606,
+  "hi": 2.8804964844578147,
+  "se": 2.1920864565571585
+ },
+ "selection_adjusted": {
+  "n": 4000,
+  "frac_better": 0.3535,
+  "mean": 1.4488855568643608,
+  "lo": -6.046230587975583,
+  "hi": 11.977412341814436,
+  "chosen": {
+   "Gradient boosting, absolute error | physicochemical": 2161,
+   "Gradient boosting, absolute error | one-hot + dark STY": 740,
+   "L1 median regression | physicochemical": 657,
+   "Gradient boosting, absolute error | physicochemical + dark STY": 371,
+   "Random Forest, squared error | one-hot + dark STY": 29,
+   "Random Forest, absolute error | one-hot + dark STY": 18,
+   "L1 median regression | one-hot + dark STY": 12,
+   "Gradient boosting, absolute error | one-hot": 11,
+   "L1 median regression | physicochemical + dark STY": 1
+  }
+ },
+ "perturbation": {
+  "n": 100,
+  "min": 21.88300544955383,
+  "max": 30.30052472927495,
+  "mean": 26.34560450463594,
+  "model": "Gradient boosting, absolute error",
+  "descriptors": "physicochemical"
+ },
+ "binary": {
+  "Gradient boosting, binary": [
+   23.541017877741773,
+   0.8179153782038279
+  ],
+  "Gradient boosting, binary + dark STY": [
+   22.23845018540782,
+   1.001518946905639
+  ]
+ },
+ "table6_physicochemical": {
+  "Random Forest, physicochemical + dark STY": {
+   "MAE": 0.8612343685068021,
+   "MAE_sd": 0.012066005221695557,
+   "R2": 0.22024209208283643,
+   "R2_sd": 0.019778489037831033,
+   "rho": 0.4994359805276487,
+   "vs_median": {
+    "diff": -0.3010539928593195,
+    "lo": -0.4982451186987793,
+    "hi": -0.14040645628621493,
+    "se": 0.0909364166282008
+   }
+  },
+  "Gradient boosting, physicochemical + dark STY": {
+   "MAE": 0.8186468618693066,
+   "MAE_sd": 0.05053630078880365,
+   "R2": 0.22393582085494773,
+   "R2_sd": 0.08691733607634893,
+   "rho": 0.5557614151765432,
+   "vs_median": {
+    "diff": -0.3804392506105714,
+    "lo": -0.614351280352938,
+    "hi": -0.048051403091839584,
+    "se": 0.14453333212836827
+   }
+  }
+ },
+ "settings": {
+  "L1": "QuantileRegressor(quantile=0.5, solver='highs'); alpha by inner LOPO over [0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0]",
+  "seeds_rf_squared": 20,
+  "seeds_other": 5,
+  "perturbation_replicates": 100
+ }
+}

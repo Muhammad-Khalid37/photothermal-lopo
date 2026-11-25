@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article."
+title: "Matched dark-light comparisons in photothermal CO2 methanation: code and data"
+authors:
+  - family-names: "[Surname]"
+    given-names: "[Given name]"
+version: 1.0.0
+license: MIT
+preferred-citation:
+  type: article
+  title: "Matched Dark–Light Comparisons in Photothermal CO2 Methanation: Limits of Cross-Publication Prediction and a Temperature-Dependent Relative Response"
+  authors:
+    - family-names: "[Surname]"
+      given-names: "[Given name]"
+  journal: "[Journal]"
+  year: 2026
+  doi: "[DOI]"

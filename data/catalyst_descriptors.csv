@@ -1,0 +1,29 @@
+component,role,element_basis,EN_pauling,IE1_eV,group,oxidation_state,noble,reducible,note
+Ir,active,Ir,2.20,8.967,9,,1,,
+Ni,active,Ni,1.91,7.640,10,,0,,
+Co,active,Co,1.88,7.881,9,,0,,
+Ru,active,Ru,2.20,7.361,8,,1,,
+Cu,active,Cu,1.90,7.726,11,,0,,
+Pt,active,Pt,2.28,8.959,10,,1,,
+Rh,active,Rh,2.28,7.459,9,,1,,
+C,active,C,2.55,11.260,14,,0,,carbon modifier of In2O3 (P07)
+-,active,none,0,0,0,,0,,no active component reported (pure In2O3; P07)
+CoO,promoter,Co,1.88,7.881,9,,,,
+Fe,promoter,Fe,1.83,7.902,8,,,,
+La,promoter,La,1.10,5.577,3,,,,
+Mg,promoter,Mg,1.31,7.646,2,,,,
+Ru,promoter,Ru,2.20,7.361,8,,,,
+Cu,promoter,Cu,1.90,7.726,11,,,,
+-,promoter,none,0,0,0,,,,no promoter
+Al2O3,support,Al,1.61,5.986,13,3,,0,
+Cr,support,Cr,1.66,6.767,6,3,,0,Cr2O3 (P02 Ni-Fe/Cr catalyst)
+MgO,support,Mg,1.31,7.646,2,2,,0,
+ZrO2,support,Zr,1.33,6.634,4,4,,0,
+SiO2,support,Si,1.90,8.152,14,4,,0,
+TiO2,support,Ti,1.54,6.828,4,4,,1,
+CeO2,support,Ce,1.12,5.539,3,4,,1,f-block; group set to 3
+MoO3,support,Mo,2.16,7.092,6,6,,1,
+In2O3,support,In,1.78,5.786,13,3,,1,
+HxWO3,support,W,2.36,7.864,6,6,,1,nominal W(VI) of the hydrogen tungsten bronze
+MnCo2O4,support,Mn+2Co,1.77,7.732,8.33,2.67,,1,cation-weighted mean (1 Mn : 2 Co)
+-,support,none,,,,,,,unsupported Ni-Fe (P06 row); median-imputed within each training fold

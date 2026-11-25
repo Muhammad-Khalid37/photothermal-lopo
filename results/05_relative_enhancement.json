@@ -1,0 +1,157 @@
+{
+ "counts": {
+  "n": 76,
+  "positive": 66,
+  "negative": 8,
+  "zero": 2,
+  "pooled_spearman_T": -0.736964802900883
+ },
+ "sign_test_GB": {
+  "wins": 8,
+  "n": 11,
+  "p_one_sided": 0.11328125,
+  "p_two_sided": 0.2265625
+ },
+ "sign_test_thermal": {
+  "wins": 9,
+  "n": 11,
+  "p_one_sided": 0.03271484375,
+  "p_two_sided": 0.0654296875
+ },
+ "jackknife": {
+  "range": [
+   -0.44591969995661707,
+   -0.33963769088354456
+  ],
+  "without_P02_P06": [
+   0.5672701645437034,
+   0.9302679127818413
+  ]
+ },
+ "selection_adjusted": {
+  "five": {
+   "n": 4000,
+   "frac_better": 0.93275,
+   "mean": -0.3062267788619286,
+   "lo": -0.6518852403087638,
+   "hi": 0.10384404145763271,
+   "chosen": {
+    "Gradient boosting, one-hot": 1981,
+    "Gradient boosting, one-hot + dark STY": 1343,
+    "Random Forest, one-hot + dark STY": 358,
+    "Random Forest, one-hot": 318
+   }
+  },
+  "eight": {
+   "n": 4000,
+   "frac_better": 0.87975,
+   "mean": -0.24813813328484902,
+   "lo": -0.5063075550048423,
+   "hi": 0.13988321061162245,
+   "chosen": {
+    "Gradient boosting, one-hot + dark STY": 1295,
+    "Gradient boosting, temperature only": 972,
+    "Gradient boosting, one-hot": 787,
+    "Thermal Arrhenius/dT + offset, 2 parameters": 469,
+    "Thermal Arrhenius/dT, 1 parameter": 261,
+    "Random Forest, one-hot + dark STY": 164,
+    "Random Forest, one-hot": 52
+   }
+  }
+ },
+ "thermal": {
+  "theta_all": 258082.70943199773,
+  "theta_folds": [
+   239468.8743817847,
+   263173.5039799953,
+   258082.70943199773,
+   263173.5039799953,
+   258082.70943199773,
+   258082.70943199773,
+   258632.24991754463,
+   258082.70943199773,
+   258082.70943199773,
+   263173.5039799953,
+   257355.12595654585
+  ],
+  "two_param_all": [
+   380868.24855674803,
+   -0.8738925933396424
+  ],
+  "exact_all": [
+   138698975068.83878,
+   1.8607398031965943e-06
+  ],
+  "Ea_dT_kJ_per_mol_K": 2145.6996462176294
+ },
+ "negative_pair_predictions_GB": [
+  0.09790141814411775,
+  1.7639769215126766
+ ],
+ "within_publication": [
+  {
+   "pub": "P01",
+   "n": 10,
+   "levels": 7,
+   "rho": -0.6315584534755296
+  },
+  {
+   "pub": "P04",
+   "n": 6,
+   "levels": 5,
+   "rho": -0.9856107606091624
+  },
+  {
+   "pub": "P06",
+   "n": 8,
+   "levels": 4,
+   "rho": -0.14824986333222026
+  },
+  {
+   "pub": "P08",
+   "n": 6,
+   "levels": 4,
+   "rho": -0.9411239481143202
+  },
+  {
+   "pub": "P09",
+   "n": 5,
+   "levels": 5,
+   "rho": -0.8999999999999998
+  },
+  {
+   "pub": "P11",
+   "n": 22,
+   "levels": 6,
+   "rho": -0.9350754401731537
+  },
+  {
+   "pub": "P13",
+   "n": 3,
+   "levels": 3,
+   "rho": -0.5
+  }
+ ],
+ "ablation": {
+  "temperature": [
+   1.000104918803059,
+   0.04173262979012687
+  ],
+  "operating conditions": [
+   1.0176358336065645,
+   0.04652398232156364
+  ],
+  "light intensity": [
+   0.7397600345276893,
+   0.04242882941655916
+  ],
+  "catalyst mass": [
+   0.7648356643338963,
+   0.04076317742582674
+  ],
+  "catalyst descriptors": [
+   0.7061231542104184,
+   0.027251242428746106
+  ]
+ }
+}

@@ -1,0 +1,6 @@
+,one-hot,physicochemical,one-hot + dark STY,physicochemical + dark STY
+Ridge (extended α grid),30.62,30.98,30.87,30.83
+L1 median regression,37.32,25.37,35.79,36.72
+"Random Forest, squared error",35.60 ± 0.70,40.90 ± 0.90,32.81 ± 0.96,37.38 ± 0.86
+"Random Forest, absolute error",33.25 ± 0.87,35.52 ± 1.71,31.83 ± 1.26,34.13 ± 1.66
+"Gradient boosting, absolute error",27.34 ± 1.05,24.46 ± 0.81,26.03 ± 2.42,26.20 ± 2.57
